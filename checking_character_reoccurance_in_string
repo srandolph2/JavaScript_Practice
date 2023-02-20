@@ -1,0 +1,15 @@
+function strCount(str, letter){   
+  let count = 0;
+  
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] == letter)
+      count++;
+  }
+  
+  return count;
+  
+}
+
+(strCount('Hello', 'o'), 1);
+(strCount('Hello', 'l'), 2);
+(strCount('',      'z'), 0);
